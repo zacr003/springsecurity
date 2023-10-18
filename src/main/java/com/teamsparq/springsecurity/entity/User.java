@@ -29,6 +29,7 @@ public class User implements UserDetails {
 
 
 
+    @Getter
     @Id
     @GeneratedValue
     private Long id;
@@ -83,10 +84,6 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public void setId(Long id) {
