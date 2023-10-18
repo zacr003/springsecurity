@@ -1,5 +1,6 @@
 package com.teamsparq.springsecurity.entity;
 
+import com.teamsparq.springsecurity.model.TokenType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -14,7 +15,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
