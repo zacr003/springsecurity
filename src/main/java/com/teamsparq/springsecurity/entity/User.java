@@ -27,6 +27,8 @@ import java.util.List;
 @Table(name = "_user")
 public class User implements UserDetails {
 
+
+
     @Id
     @GeneratedValue
     private Long id;
@@ -81,5 +83,13 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
